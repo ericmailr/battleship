@@ -1,0 +1,25 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "# Battleship",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmailr/battleship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericmailr/battleship/issues"
+  },
+  "homepage": "https://github.com/ericmailr/battleship#readme"
+}
