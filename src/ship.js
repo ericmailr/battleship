@@ -1,20 +1,17 @@
-"use strict";
+
 const ship = (coordinates) => {
-    let coords = coordinates; 
-    let hits = [];
-    const hit = (position) => {
-        hits.push(position); 
-        document.getElementById(position).innerHTML += 'x';
-    }
-    const isSunk = () => {
-        return getHits.length == coords.length;
-    }
+  const coords = coordinates;
+  const hits = [];
+  const hit = (position) => {
+    hits.push(position);
+    document.getElementById(position).innerHTML += 'x';
+  };
 
-    const getHits = (() => {
-        return hits;
-    })()
+  const getHits = (() => hits)();
 
-    return {hit, isSunk}
-}
+  const isSunk = () => getHits.length === coords.length;
 
-module.exports = ship;
+  return { hit, isSunk };
+};
+
+export default ship;
